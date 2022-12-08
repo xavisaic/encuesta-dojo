@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Nombre</th>
+        <th scope="col">Ubicacion</th>
+        <th scope="col">Lenguaje Favorito</th>
+        <th scope="col">Comentarios</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td scope="row">{{session['name']}}</td>
+        <td>{{session['location']}}</td>
+        <td>{{session['fav_language']}}</td>
+        <td>{{session['comments']}}</td>
+      </tr>
+      <tr>
+        <th scope="row"></th>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th scope="row"></th>
+        <td colspan="2"></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+{% endblock %}

@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+
+<!-- FORMULARIO -->
+        <div class="encuesta text-center">
+            <h1>Encuesta Dojo</h1>
+            <form action="/process" method="post">
+              <div class="mb-3 ">
+                  <label for="exampleFormControlInput1" class="form-label" name="name" for="name">Nombre</label>
+                  <input type="text" class="form-control-sm" id="exampleFormControlInput1" name="name" placeholder="Su nombre aqui">
+              </div>
+  
+              <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label" name="location" for="location">Ubicacion Dojo</label>
+                  <select class="form-select-sm" aria-label="Default select example" name="location">
+                      <option selected>Open this select menu</option>
+                      <option value="santiago">Santiago</option>
+                      <option value="concepcion">Concepcion</option>
+                      <option value="antofagasta">Antofagasta</option>
+                  </select>
+              </div>
+  
+  
+              <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label" for="fav_language">Lenguaje Favorito</label>
+                  <select class="form-select-sm" aria-label="Default select example" name="fav_language">
+                      <option selected>Open this select menu</option>
+                      <option value="python">Python</option>
+                      <option value="javascript">Javascript</option>
+                      <option value="ruby">Ruby</option>
+                  </select>
+              </div>
+  
+              <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label" name="comments">Comentarios</label>
+                  <textarea class="form-control-sm" id="exampleFormControlTextarea1" rows="3" name="comments"></textarea>
+              </div>
+              <button class="btn btn-primary btn-lg btn-block" type="submit">Checkout</button>
+            </form>
+        </div>
+{% endblock %}
