@@ -9,13 +9,13 @@
             <h1>Encuesta Dojo</h1>
             <form action="/process" method="post">
               <div class="mb-3 ">
-                  <label for="exampleFormControlInput1" class="form-label" name="name" for="name">Nombre</label>
-                  <input type="text" class="form-control-sm" id="exampleFormControlInput1" name="name" placeholder="Su nombre aqui">
+                  <label for="exampleFormControlInput1" class="form-label" name="first_name" for="first_name">Nombre</label>
+                  <input type="text" class="form-control-sm" id="exampleFormControlInput1" name="first_name" placeholder="Su nombre aqui" required>
               </div>
   
               <div class="mb-3">
                   <label for="exampleFormControlInput1" class="form-label" name="location" for="location">Ubicacion Dojo</label>
-                  <select class="form-select-sm" aria-label="Default select example" name="location">
+                  <select class="form-select-sm" aria-label="Default select example" name="location" required>
                       <option selected>Open this select menu</option>
                       <option value="santiago">Santiago</option>
                       <option value="concepcion">Concepcion</option>
@@ -26,7 +26,7 @@
   
               <div class="mb-3">
                   <label for="exampleFormControlInput1" class="form-label" for="fav_language">Lenguaje Favorito</label>
-                  <select class="form-select-sm" aria-label="Default select example" name="fav_language">
+                  <select class="form-select-sm" aria-label="Default select example" name="fav_language" required>
                       <option selected>Open this select menu</option>
                       <option value="python">Python</option>
                       <option value="javascript">Javascript</option>
@@ -36,7 +36,7 @@
   
               <div class="mb-3">
                   <label for="exampleFormControlTextarea1" class="form-label" name="comments">Comentarios</label>
-                  <textarea class="form-control-sm" id="exampleFormControlTextarea1" rows="3" name="comments"></textarea>
+                  <textarea class="form-control-sm" id="exampleFormControlTextarea1" rows="3" name="comentario" required></textarea>
               </div>
               <button class="btn btn-primary btn-lg btn-block" type="submit">Checkout</button>
             </form>
